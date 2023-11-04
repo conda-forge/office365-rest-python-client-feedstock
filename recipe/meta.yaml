@@ -1,5 +1,5 @@
 {% set name = "office365-rest-python-client" %}
-{% set version = "2.4.3" %}
+{% set version = "2.5.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/Office365-REST-Python-Client-{{ version }}.tar.gz
-  sha256: 9087dcd9d7231437afc66b98dbef2ce21f589c61d2e82f941955cff4a53cd3ff
+  sha256: cfd1cd78f65190926f4d45877db22428a2ac0ab244493fb55f13475e3b4db965
 
 build:
   noarch: python
