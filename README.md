@@ -144,4 +144,5 @@ Feedstock Maintainers
 =====================
 
 * [@marcelotrevisani](https://github.com/marcelotrevisani/)
+* [@rxm7706](https://github.com/rxm7706/)
 

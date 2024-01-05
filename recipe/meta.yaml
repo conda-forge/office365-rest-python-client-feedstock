@@ -11,15 +11,15 @@ source:
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
   run:
-    - python >=3.6
+    - python >=3.8
     - requests
     - msal
     - pytz
@@ -41,3 +41,4 @@ about:
 extra:
   recipe-maintainers:
     - marcelotrevisani
+    - rxm7706
