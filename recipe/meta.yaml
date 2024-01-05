@@ -1,5 +1,5 @@
-{% set name = "office365-rest-python-client" %}
-{% set version = "2.4.3" %}
+{% set name = "Office365-REST-Python-Client" %}
+{% set version = "2.4.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,19 +7,19 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/Office365-REST-Python-Client-{{ version }}.tar.gz
-  sha256: 9087dcd9d7231437afc66b98dbef2ce21f589c61d2e82f941955cff4a53cd3ff
+  sha256: 82e848a5239d7ce6c07e61a2904a1fa0d0135676176bb9f4cb6ccec1c9758f39
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
   run:
-    - python >=3.6
+    - python >=3.8
     - requests
     - msal
     - pytz
@@ -41,3 +41,4 @@ about:
 extra:
   recipe-maintainers:
     - marcelotrevisani
+    - rxm7706
