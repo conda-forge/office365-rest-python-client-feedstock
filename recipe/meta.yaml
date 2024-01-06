@@ -23,6 +23,7 @@ requirements:
     - requests
     - msal
     - pytz
+    - typing-extensions >=4.0.0
 
 test:
   imports:
