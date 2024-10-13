@@ -1,13 +1,13 @@
-{% set name = "Office365-REST-Python-Client" %}
-{% set version = "2.5.10" %}
+{% set name = "office365-rest-python-client" %}
+{% set version = "2.5.13" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/Office365-REST-Python-Client-{{ version }}.tar.gz
-  sha256: 12a5ee97a0743beecace4055eac030cc78a534a1fdf511c113f418f2b16b293b
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/office365_rest_python_client-{{ version }}.tar.gz
+  sha256: 2617f9e45e843397195f8e900eadd3fc88ec7e70a4a724c8b2cc7fd4bac608ed
 
 build:
   noarch: python
@@ -18,6 +18,7 @@ requirements:
   host:
     - python >=3.8
     - pip
+    - setuptools
   run:
     - python >=3.8
     - requests
