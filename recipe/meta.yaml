@@ -1,5 +1,5 @@
 {% set name = "office365-rest-python-client" %}
-{% set version = "2.5.13" %}
+{% set version = "2.5.14" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/office365_rest_python_client-{{ version }}.tar.gz
-  sha256: 2617f9e45e843397195f8e900eadd3fc88ec7e70a4a724c8b2cc7fd4bac608ed
+  sha256: d25569e6e6e837eb137e84f9cf4a93a60ed9c909b31bbe467938517712142ecb
 
 build:
   noarch: python
@@ -20,6 +20,7 @@ requirements:
     - pip
     - setuptools
   run:
+    - typing_extensions >=4.0.0
     - python >=3.8
     - requests
     - msal
